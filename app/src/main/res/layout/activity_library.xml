@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Library"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        style="@style/CARD_BACKGROUND"
+        >
+
+        <ImageView
+            android:id="@+id/backPres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            style="@style/ICON_COLOR"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="লাইব্রেরী"
+            style="@style/TEXT_COLOR"
+            android:fontFamily="@font/kalpurush"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+    <View
+        android:id="@+id/dividar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        style="@style/VIEW_BACKGROUND"
+        android:layout_below="@id/toolbar"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/dividar"
+        android:padding="5dp"
+        >
+
+        <GridView
+            android:id="@+id/gridView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:horizontalSpacing="5dp"
+            android:numColumns="2"
+            android:verticalSpacing="5dp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

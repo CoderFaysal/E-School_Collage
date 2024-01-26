@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Syllabus"
+    >
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        style="@style/CARD_BACKGROUND"
+        >
+
+        <ImageView
+            android:id="@+id/backPres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            style="@style/ICON_COLOR"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="সিলেবাস"
+            style="@style/TEXT_COLOR"
+            android:fontFamily="@font/kalpurush"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+    <View
+        android:id="@+id/dividar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        style="@style/VIEW_BACKGROUND"
+        android:layout_below="@id/toolbar"
+        />
+
+
+
+    <RelativeLayout
+        android:id="@+id/layRoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/dividar"
+        android:orientation="vertical"
+        >
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="20dp"
+            android:src="@drawable/ic_download"
+            android:visibility="gone"
+            style="@style/FAV"
+            app:borderWidth="0dp"
+            app:tint="@android:color/white"
+            />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layNonet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_below="@id/dividar"
+        >
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/loading"
+            app:lottie_repeatMode="restart"
+            android:layout_marginTop="12dp"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

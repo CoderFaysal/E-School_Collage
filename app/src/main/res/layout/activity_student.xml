@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Student"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        style="@style/CARD_BACKGROUND"
+        >
+
+        <ImageView
+            android:id="@+id/backPres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            style="@style/ICON_COLOR"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            />
+
+
+        <TextView
+            android:id="@+id/classNames"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ছাত্র-ছাত্রী"
+            style="@style/TEXT_COLOR"
+            android:fontFamily="@font/kalpurush"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+    <View
+        android:id="@+id/dividar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        style="@style/VIEW_BACKGROUND"
+        android:layout_below="@id/toolbar"
+        />
+
+    <LinearLayout
+        android:id="@+id/searchLay"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="vertical"
+        android:layout_margin="7dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="1dp"
+        android:paddingBottom="1dp"
+        android:layout_below="@id/dividar"
+        >
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:queryBackground="@android:color/transparent"
+            app:iconifiedByDefault="false"
+            android:textSize="14sp"
+            style="@style/TEXT_COLOR"
+            app:queryHint="Search by Name"
+            android:layout_marginLeft="-15dp"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/dividerLine"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        style="@style/VIEW_BACKGROUND"
+        android:layout_below="@id/searchLay"
+        />
+
+
+    <LinearLayout
+        android:layout_below="@id/dividerLine"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp"
+        >
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent"
+            android:clickable="false"
+            />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

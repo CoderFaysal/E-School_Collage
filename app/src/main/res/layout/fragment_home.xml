@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Home"
+    style="@style/MAIN_BACKGROUND"
+    >
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        style="@style/CARD_BACKGROUND"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:title="@string/menu_home"
+            style="@style/TEXT_COLOR"
+            />
+
+        <ImageView
+            android:id="@+id/notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_notifications"
+            android:layout_marginLeft="-50dp"
+            style="@style/ICON_COLOR"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            />
+    </LinearLayout>
+    <View
+        android:id="@+id/dividar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        style="@style/VIEW_BACKGROUND"
+        android:layout_below="@id/toolbar"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="15dp"
+        android:layout_below="@id/dividar"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            style="@style/MAQUUEE"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/notice"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                style="@style/NOTICE"
+                android:fontFamily="@font/kalpurush"
+                android:padding="5dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="5dp"
+                />
+
+            <TextView
+                android:id="@+id/marqueeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:fontFamily="@font/kalpurush"
+                android:singleLine="true"
+                android:text="@string/marqueeText"
+                android:textSize="18sp"
+                style="@style/TEXT_COLOR"
+                android:paddingStart="10dp"
+                />
+        </LinearLayout>
+
+        <com.denzcoskun.imageslider.ImageSlider
+            android:id="@+id/image_slider"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            app:iss_auto_cycle="true"
+            app:iss_period="1000"
+            app:iss_delay="0"
+            app:iss_placeholder="@drawable/placeholder"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            app:iss_corner_radius="10"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <GridView
+                android:id="@+id/gridView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                android:horizontalSpacing="5dp"
+                android:numColumns="3"
+                android:verticalSpacing="5dp"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

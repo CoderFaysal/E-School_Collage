@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/checkResult"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:gravity="center_vertical"
+            android:weightSum="10"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            style="@style/CARD_BACKGROUND"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:layout_weight="4.1"
+                >
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/resultImage"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/placeholder"
+                    app:civ_border_color="@color/black"
+                    app:civ_border_width="1dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:layout_weight="1.8"
+                >
+
+                <TextView
+                    android:id="@+id/resultName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fahim Faysal"
+                    android:textSize="16sp"
+                    style="@style/TEXT_COLOR"
+                    android:maxLines="2"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/kalpurush"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_vertical|end"
+                android:layout_weight="4.1"
+                >
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/right_arrow"
+                    android:background="@drawable/round_bg_gray"
+                    android:padding="12dp"
+                    app:tint="@color/black"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

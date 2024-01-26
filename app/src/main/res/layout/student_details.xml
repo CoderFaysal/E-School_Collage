@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentDetails"
+    >
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        style="@style/CARD_BACKGROUND"
+        >
+
+        <ImageView
+            android:id="@+id/backPres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            style="@style/ICON_COLOR"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            />
+
+
+        <TextView
+            android:id="@+id/stName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ছাত্র-ছাত্রী"
+            style="@style/TEXT_COLOR"
+            android:fontFamily="@font/kalpurush"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+    <View
+        android:id="@+id/dividar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        style="@style/VIEW_BACKGROUND"
+        android:layout_below="@id/toolbar"
+        />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_below="@id/dividar"
+        android:padding="15dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/nameImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/placeholder"
+                />
+
+            <TextView
+                android:id="@+id/detailsName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                style="@style/TEXT_COLOR"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:fontFamily="@font/kalpurush"
+                android:layout_marginTop="5dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                style="@style/BACKGROUND_SHAP"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/detailsRoll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ID"
+                    style="@style/TEXT_COLOR"
+                    android:textSize="16sp"
+                    android:layout_weight="5"
+                    android:fontFamily="@font/kalpurush"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/detailsClass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Share"
+                    style="@style/TEXT_COLOR"
+                    android:textSize="16sp"
+                    android:layout_weight="5"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/kalpurush"
+                    />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/detailsFathers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Father"
+                android:textSize="16sp"
+                android:fontFamily="@font/kalpurush"
+                android:layout_marginTop="5dp"
+                style="@style/TEXT_BACKGROUND_SHAP"
+                android:padding="10dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/detailsMothers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mother"
+                android:textSize="16sp"
+                android:fontFamily="@font/kalpurush"
+                android:layout_marginTop="5dp"
+                style="@style/TEXT_BACKGROUND_SHAP"
+                android:padding="10dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/detailsAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textSize="16sp"
+                android:fontFamily="@font/kalpurush"
+                android:layout_marginTop="5dp"
+                style="@style/TEXT_BACKGROUND_SHAP"
+                android:padding="10dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/detailsPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:textSize="16sp"
+                android:fontFamily="@font/kalpurush"
+                android:layout_marginTop="5dp"
+                style="@style/TEXT_BACKGROUND_SHAP"
+                android:padding="10dp"
+                android:textStyle="bold"
+                />
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

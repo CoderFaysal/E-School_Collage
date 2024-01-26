@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutAcademy"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        style="@style/CARD_BACKGROUND"
+        >
+
+        <ImageView
+            android:id="@+id/backPres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            style="@style/ICON_COLOR"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="মাদ্রাসা সম্পর্কে"
+            style="@style/TEXT_COLOR"
+            android:fontFamily="@font/kalpurush"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+    <View
+        android:id="@+id/dividar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        style="@style/VIEW_BACKGROUND"
+        android:layout_below="@id/toolbar"
+        />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/dividar"
+        android:padding="15dp"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/md_logo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="বাংলাদেশ মাদ্রাসা শিক্ষা বোর্ড"
+                android:fontFamily="@font/kalpurush"
+                style="@style/TEXT_COLOR"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="অরফ্যানেজ রোড, বকশীবাজার, ঢাকা।"
+                android:fontFamily="@font/kalpurush"
+                style="@style/TEXT_COLOR"
+                android:textSize="14sp"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="স্থাপিতঃ ১৯৭৯ ইং"
+                android:fontFamily="@font/kalpurush"
+                style="@style/TEXT_COLOR"
+                android:textSize="14sp"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="প্রতিষ্ঠাতাঃ বাংলাদেশ সরকার"
+                android:fontFamily="@font/kalpurush"
+                style="@style/TEXT_COLOR"
+                android:textSize="15sp"
+                android:gravity="center"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="বাংলাদেশ মাদ্রাসা শিক্ষা বোর্ড বাংলাদেশের মাদ্রাসা শিক্ষা পরিচালনার জন্য গঠিত বোর্ড। এটি ১৯৭৮ সালের মাদ্রাসা শিক্ষা অধ্যাদেশবলে স্থাপিত হয়। বাংলাদেশে মাদ্রাসা শিক্ষার আধুনিকীকরণ ও মানোন্নয়নের লক্ষ্যে এর কার্যক্রম পরিচালিত হয়। বাংলাদেশ সরকারের শিক্ষা মন্ত্রণালয়ের মাদরাসা শিক্ষা অধিদপ্তর দেশের সকল মাদ্রাসা পরিচালনা করে। গভর্ণিং বডি এবং একজন অধ্যক্ষের প্রত্যক্ষ তত্ত্বাবধানে ও উপাধ্যক্ষের সহযোগিতায় যাবতীয় একাডেমিক, প্রশাসনিক ও উন্নয়নমূলক কর্মকাণ্ড পরিচালিত হয়।"
+                android:fontFamily="@font/kalpurush"
+                style="@style/TEXT_COLOR"
+                android:textSize="15sp"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ইতিহাস -"
+                android:fontFamily="@font/kalpurush"
+                style="@style/TEXT_COLOR"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginTop="15sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="১৭৮০ সালে কলকাতা আলিয়া মাদ্রাসা প্রতিষ্ঠার মাধ্যমে ভারত উপমহাদেশে আনুষ্ঠানিকভাবে আলিয়া ধারার মাদ্রাসা শিক্ষাব্যবস্থার শুভ সূচনা হয়। পর্যায়ক্রমে অবিভক্ত বাংলা, বিহার, আসাম ও ত্রিপুরাসহ বিভিন্ন অঞ্চলে মাদ্রাসা শিক্ষা সম্প্রসারিত হতে থাকে। ১৯৭১ সালে স্বাধীন ও সার্বভৌম বাংলাদেশের অভ্যূদয়ের পর জাতির পিতা বঙ্গবন্ধু শেখ মুজিবুর রহমান-এর প্রত্যক্ষ নির্দেশনায় মাদ্রাসা শিক্ষাকে যুগোপযোগী ও কর্মমুখী করার উদ্যোগ গৃহীত হয়। এরই ধারাবাহিকতায় বাংলাদেশ মাদ্রাসা শিক্ষা বোর্ড গঠিত হয় এবং ঢাকাস্থ সরকারি মাদ্রাসা-ই-আলিয়া ক্যাম্পাসে এর কার্যক্রম শুরু হয়। ১৯৭৮ সালে মাদ্রাসা শিক্ষা অর্ডিনেন্স জারির মাধ্যমে বাংলাদেশ মাদ্রাসা শিক্ষা বোর্ড পুনর্গঠন করা হয়। ফলশ্রুতিতে ১৯৭৯ সালের জুন মাসে বাংলাদেশ মাদ্রাসা শিক্ষা বোর্ড একটি স্বায়ত্বশাসিত প্রতিষ্ঠানে রূপ পরিগ্রহ করে। এরপর হতে এ পর্যন্ত বাংলাদেশ মাদ্রাসা শিক্ষা বোর্ড তার কার্যক্রম সাফল্যের সাথে পরিচালনা করে আসছে।[২] ২০০৬ সালের পূর্ব মাদরাসা শিক্ষা বোর্ড ফাযিল ও কামিল মাদরাসাসমূহ নিয়ন্ত্রণ করত। ২০০৬ সাল থেকে ইসলামী বিশ্ববিদ্যালয়, কুষ্টিয়া এবং ২০১৬ সাল থেকে ইসলামি আরবি বিশ্ববিদ্যালয়, ঢাকা নিয়ন্ত্রণ করে আসছে।"
+                android:fontFamily="@font/kalpurush"
+                style="@style/TEXT_COLOR"
+                android:textSize="15sp"
+                />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
